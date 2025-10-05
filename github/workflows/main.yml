@@ -1,0 +1,17 @@
+name: Print Email Workflow
+
+on:
+  workflow_dispatch:  # Allows manual run from GitHub Actions tab
+
+jobs:
+  show-email:
+    name: Display Email Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print my email ID
+        run: |
+          echo "My email ID is: 21f3000401@ds.study.iitm.ac.in"
